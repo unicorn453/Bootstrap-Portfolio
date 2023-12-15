@@ -1,0 +1,27 @@
+:root {
+  --mian: rgb(17, 78, 76);
+  --jumbo: rgb(228, 228, 228);
+}
+.navbar-brand {
+  background-color: var(--mian);
+  size: 400px;
+}
+/* #navbarNav {
+  position: absolute;
+  left: calc(100vh - 5px);
+}
+.nav-link {
+  padding-right: 40px;
+} */
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0;
+}
+.nav-item {
+  padding-right: 80px;
+}
+.photoBackground {
+  background-image: url(../images/portfolio4.png);
+  background-position: center;
+  background-color: var(--jumbo);
+}
