@@ -22,6 +22,29 @@
 }
 .photoBackground {
   background-image: url(../images/portfolio4.png);
+  background-repeat: no-repeat;
   background-position: center;
   background-color: var(--jumbo);
+}
+.card-body {
+  display: flex;
+  flex-direction: row !important;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.header {
+  border-right: 2px;
+  border-color: rgb(97, 18, 18);
+  border-style: solid;
+  border-top: 0cap;
+  border-left: 0cap;
+  border-bottom: 0cap;
+  padding-right: 40px;
+  height: max-content;
+}
+.card {
+  border: 0cap;
+}
+.footer a {
+  padding-right: 80px;
 }
