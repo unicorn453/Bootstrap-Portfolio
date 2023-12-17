@@ -1,11 +1,13 @@
 :root {
   --mian: rgb(17, 78, 76);
   --jumbo: rgb(228, 228, 228);
+  --main-site: url(/images/gallery.png);
 }
 .navbar-brand {
   background-color: var(--mian);
   size: 400px;
 }
+/* Attempt to align children elements of the navigation  */
 /* #navbarNav {
   position: absolute;
   left: calc(100vh - 5px);
@@ -30,7 +32,7 @@
   display: flex;
   flex-direction: row !important;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
 .header {
   border-right: 2px;
@@ -47,4 +49,30 @@
 }
 .footer a {
   padding-right: 80px;
+}
+/* previous attempt for adding grid responsiveness */
+/* .horiseon {
+  width: 450px;
+  height: 180px;
+}
+.lawFirm {
+  width: 450px;
+  height: 180px;
+} */
+
+.gallery {
+  margin: 10px;
+  border: 2px solid;
+}
+.lawFirm {
+  margin: 10px;
+  border: 2px solid;
+}
+.horiseon {
+  margin: 10px;
+  border: 2px solid;
+}
+.placeholder {
+  margin: 10px;
+  border: 2px solid;
 }
