@@ -31,15 +31,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#"
+              <a class="nav-link active text-light" aria-current="page" href="#aboutMe"
                 >About Me</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Work</a>
+              <a class="nav-link text-light" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Contact Me</a>
+              <a class="nav-link text-light" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#" aria-disabled="true"
@@ -73,7 +76,7 @@
     <!-- Cards -->
     <!-- <div class="row row-cols-1 row-cols-md-1 g-4"> -->
     <div class="row row-cols-1 row-cols-md-1 g-4">
-      <div class="col">
+      <div class="col" id="aboutMe">
         <div class="card" style="width: 100%">
           <div class="card-body">
             <h5 class="header">About / Contact</h5>
@@ -85,19 +88,20 @@
         </div>
       </div>
       <!-- second -->
-      <div class="col">
+      <div class="col" id="work">
         <div class="card" style="width: 100%">
           <div class="card-body gridPosition">
             <h5 class="header">Work</h5>
             <div class="text-center gridWork">
-              <div class="row">
+              <!-- Adding justify content for horizontal alignment to each row -->
+              <div class="row justify-content-center">
                 <!-- Adding responsiveness to the design using sm, lg  properties and keeping the size of the image according to the space it takes on the page by adding style attribute of width: 100% -->
-                <div class="col-lg-6 col-sm-6">
-           <img src="./images/gallery.png" class="gallery" alt="" style="width:100%">
+                <div class="col-lg-6 col-md-6 col-sm-6 no-box-sizing">
+           <img src="./images/gallery.png" class="gallery" alt="Screenshot from a Gallery website home page." style="width:100%">
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-3 col-sm-6">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                   <img
                     src="./images/horiseon.png"
                     alt="Screenshot from a Horiseon website home page."
@@ -105,7 +109,8 @@
                     style="width:100%"
                   />
                 </div>
-                <div class="col-lg-3 col-sm-6">
+            
+                <div class="col-lg-3 col-md-6 col-sm-6">
                   <img
                     src="./images/lawfirm.png"
                     alt="Screenshot from a Law Firm website home page."
@@ -114,13 +119,14 @@
                   />
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-3 col-sm-6">
+  
+              <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                  <img src="https://placehold.co/450x180/png" alt=""
                  class="placeholder" style="width:100%">
                 </div>
              
-                  <div class="col-lg-3 col-sm-6">
+                  <div class="col-lg-3 col-md-6 col-sm-6">
                 <img src="https://placehold.co/450x180/png" alt=""
                 class="placeholder" style="width:100%">
            
@@ -129,7 +135,7 @@
         </div>
       </div>
     <!-- third -->
-    <div class="col">
+    <div class="col" id="skills">
       <div class="card" style="width: 100%">
         <div class="card-body">
           <h5 class="header">Skills</h5>
@@ -143,12 +149,13 @@
     <!-- forth -->
     <div class="col">
       <div class="card" style="width: 100%">
-        <div class="card-body justify-content-center footer">
+        <div class="footer">
+          <h3 id="contact">Contact</h3>
           <!-- <h5 class="header">Card title</h5> -->
           <p class="card-text">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-            <a href="#">Email</a>
+            <a href="https://www.linkedin.com/in/kirila-r/" target="_blank" >LinkedIn</a>
+            <a href="https://github.com/unicorn453" target="_blank" >GitHub</a>
+            <a href="mailto:kira.ruseva@gmail.com">Email</a>
           </p>
         </div>
       </div>

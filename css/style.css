@@ -1,8 +1,18 @@
+/* Unsetting bootstripe styling to align grid properly */
+*,
+::after,
+::before {
+  box-sizing: unset !important;
+}
 :root {
   --mian: rgb(17, 78, 76);
   --jumbo: rgb(228, 228, 228);
   --main-site: url(/images/gallery.png);
 }
+/* .navbar {
+  margin: 0px;
+  box-sizing: border-box;
+} */
 .navbar-brand {
   background-color: var(--mian);
   size: 400px;
@@ -29,10 +39,13 @@
   background-color: var(--jumbo);
 }
 .card-body {
+  border: 2px double;
+  margin: 50px;
   display: flex;
-  flex-direction: row !important;
+  flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between !important;
+  justify-content: space-between;
+  align-content: center;
 }
 .header {
   border-right: 2px;
@@ -46,9 +59,6 @@
 }
 .card {
   border: 0cap;
-}
-.footer a {
-  padding-right: 80px;
 }
 /* previous attempt for adding grid responsiveness */
 /* .horiseon {
@@ -75,4 +85,22 @@
 .placeholder {
   margin: 10px;
   border: 2px solid;
+}
+.card-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer {
+  border: 2px double;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  margin: 50px;
+}
+#contact {
+  padding: 30px 30px 30px 30px;
+  border: 1px solid;
 }
