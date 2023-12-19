@@ -165,3 +165,8 @@ table {
 #skills h3 {
   padding-bottom: 200px;
 }
+.btn-light:hover {
+  color: white;
+  background-color: blue;
+  border-color: gray;
+}
