@@ -8,6 +8,7 @@
   --mian: rgb(17, 78, 76);
   --jumbo: rgb(228, 228, 228);
   --main-site: url(/images/gallery.png);
+  --background: rgb(62, 198, 198);
 }
 /* .navbar {
   margin: 0px;
@@ -35,11 +36,11 @@
 .photoBackground {
   background-image: url(../images/portfolio4.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-color: var(--jumbo);
 }
 .card-body {
-  border: 2px double;
+  border: 4px double var(--mian);
   margin: 50px;
   display: flex;
   flex-direction: row;
@@ -92,7 +93,7 @@
   justify-content: space-around;
 }
 .footer {
-  border: 2px double;
+  border: 4px double var(--mian);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,5 +103,46 @@
 }
 #contact {
   padding: 30px 30px 30px 30px;
-  border: 1px solid;
+  border: 2px solid;
+  background-color: aliceblue;
+}
+/* Adding additional responsivness on the top of the Bootstrap styling  */
+@media only screen and (max-width: 800px) {
+  .photoBackground {
+    width: auto;
+    height: 200px;
+    background-position: 70%;
+    size: 300px;
+    background-size: cover;
+  }
+  .photoBackground p {
+    width: 50%;
+    height: fit-content;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .photoBackground {
+    background-size: cover;
+  }
+}
+/* Calculating the font size for each html text */
+html {
+  font-size: calc(0.25em + 1vw);
+}
+.header {
+  margin-right: 10px;
+  padding-bottom: calc(20% + 100px);
+}
+.card {
+  background-color: var(--background);
+}
+.card-body {
+  background-color: white;
+}
+.footer {
+  background-color: white;
+}
+body {
+  background-color: var(--background);
 }
