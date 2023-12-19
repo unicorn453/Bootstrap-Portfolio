@@ -14,6 +14,7 @@
   </head>
   <body>
     <!-- Navigation -->
+    <header>
     <nav class="navbar sticky-top navbar-expand-lg bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand text-light" href="#"><h1>Kirila Ruseva</h1></a>
@@ -53,23 +54,24 @@
         </div>
       </div>
     </nav>
+    </header>
     <!-- Jumbotron -->
 
-    <div class="p-5 mb-4 photoBackground">
-      <div class="container-fluid py-3 jumboCopy">
+    <section class="p-5 mb-4 photoBackground">
+      <article class="container-fluid py-3 jumboCopy">
         <h2 class="display-5 fw-bold">Hello, world!</h2>
         <p class="col-md-6 col-sm-3 fs-6">
           This is my website, featuring my professional experience as a web developer. Here, you will find a comprehensive overview of my skills and accomplishments in the field. Additionally, I have included a few quick links to facilitate communication with me.
         </p>
-      </div>
-    </div>
-    <!-- Cards -->
-    <!-- <div class="row row-cols-1 row-cols-md-1 g-4"> -->
-    <div class="row row-cols-1 row-cols-md-1 g-4" id="aboutMe">
+      </article>
+    </section>
+    <!-- First card -->
+      <main>
+    <section class="row row-cols-1 row-cols-md-1 g-4" id="aboutMe">
       <div class="col">
         <div class="card" style="width: 100%">
           <div class="card-body">
-            <h3 class="header">About</h3>
+            <h3 class="heading aboutBorder">About</h3>
             <p class="card-text">
               <p>
                 Hi, there, welcome to my portfolio page. My name is Kirila Ruseva, and
@@ -95,11 +97,12 @@
           </div>
         </div>
       </div>
-      <!-- second -->
-      <div class="col" id="work">
+    </section>
+      <!-- second card-->
+      <section class="col" id="work">
         <div class="card" style="width: 100%">
-          <div class="card-body gridPosition">
-            <h3 class="header">Work</h3>
+          <article class="card-body">
+            <h3 class="heading workBorder">Work</h3>
             <div class="text-center gridWork">
               <!-- Adding justify content for horizontal alignment to each row -->
               <div class="row justify-content-center">
@@ -141,61 +144,82 @@
             </div>
           </div>
         </div>
-      </div>
-    <!-- third -->
-    <div class="col" id="skills">
+      </article>
+    </section>
+    <!-- third card-->
+    <section class="col" id="skills">
       <div class="card" style="width: 100%">
-        <div class="card-body">
-          <h3 class="header">Skills</h3>
+        <article class="card-body">
+          <h3 class="heading">Skills</h3>
           <p class="card-text">
-            <table>
+            <table class="table-responsive-lg">
+              <thead>
                 <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"></th>
                   <td>HTML5</td>
                   <td>CSS</td>
                   <td>JQuery</td>
+                  <tr>
+                    <th scope="row"></th>
                   <td>Javasctipt</td>
                   <td>AJAX</td>
+                  <td>Bootstrap</td>
+                  </tr>
                 </tr>
                 <tr>
-                  <td>Bootstrap</td>
+                  <th scope="row"></th>
                   <td>SASS</td>
                   <td>JSX</td>
                   <td>Vue.js</td>
-                  <td>Svelte</td>
                 </tr>
-                <tr>
+                  <tr>
+                    <th scope="row"></th>
+                  <td>Svelte</td>
                   <td>MySQL</td>
                   <td>MongoDB</td>
+                  </tr>
+                <tr>
+                  <th scope="row"></th>
                   <td>Express</td>
                   <td>ReactJS</td>
                   <td>Node</td>
                 </tr>
                 <tr>
+                  <th scope="row"></th>
                   <td>Handlebars</td>
                   <td>Firebase</td>
                   <td>AWS</td>
+                </tr>
+                  <tr>
+                    <th scope="row"></th>
                   <td>Webpack</td>
                   <td>Gulp</td>
                 </tr>
+              </tbody>
               </table>
         </p>
-        </div>
+      </article>
       </div>
-    </div>
-    <!-- forth -->
-    <div class="col">
+    </section>
+  </main>
+    <!-- forth card -->
+    <footer class="col">
       <div class="card" style="width: 100%">
-        <div class="footer">
-          <h3 id="contact">Contact</h3>
-          <!-- <h3 class="header">Card title</h3> -->
+          <h4 id="contact">Contact</h4>
           <p class="card-text">
             <a href="https://www.linkedin.com/in/kirila-r/" target="_blank" type="button" class="btn btn-link shadow p-3 mb-5 bg-body rounded">LinkedIn</a>
             <a type="button" class="btn btn-link shadow p-3 mb-5 bg-body rounded" href="https://github.com/unicorn453" target="_blank" >GitHub</a>
             <a type="button" class="btn btn-link shadow p-3 mb-5 bg-body rounded" href="mailto:kira.ruseva@gmail.com">Email</a>
           </p>
-        </div>
       </div>
-    </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

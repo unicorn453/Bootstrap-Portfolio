@@ -47,8 +47,9 @@
   align-items: flex-start;
   justify-content: space-between;
   align-content: center;
+  background-color: white;
 }
-.header {
+.heading {
   border-right: 2px;
   border-color: rgb(97, 18, 18);
   border-style: solid;
@@ -57,6 +58,17 @@
   border-bottom: 0cap;
   padding-right: 40px;
   height: max-content;
+  margin-right: 10px;
+}
+.gridWork {
+  padding-right: 15px;
+}
+.workBorder {
+  padding-bottom: 500px;
+  padding-right: 45px;
+}
+.aboutBorder {
+  padding-bottom: 300px;
 }
 .card {
   border: 0cap;
@@ -91,11 +103,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: white;
 }
 .card-text a {
   margin-top: 30px;
+  background-color: white;
 }
-.footer {
+footer {
   border: 4px double var(--mian);
   display: flex;
   flex-direction: column;
@@ -103,6 +117,7 @@
   text-align: center;
   padding: 30px;
   margin: 40px;
+  background-color: white;
 }
 #contact {
   padding: 30px 30px 30px 30px;
@@ -133,18 +148,8 @@
 html {
   font-size: calc(0.25em + 1vw);
 }
-.header {
-  margin-right: 10px;
-  padding-bottom: calc(20% + 100px);
-}
 .card {
   background-color: var(--background);
-}
-.card-body {
-  background-color: white;
-}
-.footer {
-  background-color: white;
 }
 body {
   background-color: var(--background);
@@ -155,7 +160,8 @@ td {
 }
 table {
   width: 100%;
+  box-sizing: border-box;
 }
 #skills h3 {
-  padding-bottom: 80px;
+  padding-bottom: 200px;
 }
