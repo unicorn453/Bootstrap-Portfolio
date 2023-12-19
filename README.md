@@ -4,6 +4,9 @@
 
 A portfolio website showcasing a person's work through an about section, contact details, skills section and examples of their work.
 
+Link to the deployed project:
+https://unicorn453.github.io/Bootstrap-Portfolio/
+
 ![Screenshot of the project page](./images/websiteScreenshot.png)
 
 ## Installation
